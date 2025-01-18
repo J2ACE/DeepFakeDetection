@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header with Logo and Navigation -->
+    <header>
+        <div class="logo">
+            <img src="C:\Users\shirk\MY CODES\SIH\images\Screenshot_2024-10-18_182741-removebg-preview.png" alt="SatyaNirikshan Logo" height="60" width="250">
+        </div>
+        <nav>
+            <ul>
+                <li> <a href="#section1">Home</a> </li>
+                <li> <a href="#section2">User Experience</a> </li>
+                <li> <a href="#section3">About Us</a> </li>
+                <li> <a href="#section5">Contact Us</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="section1" class="home-section">
+        <h1>Welcome to SatyaNirikshan</h1>
+        <p>Your go-to solution for deepfake detection through AI/ML.</p>
+        <a href="C:\Users\shirk\MY CODES\SIH\GetStarted.html" class="btn-get-started">Get Started</a>
+    </section>
+
+    <!-- User Experience Section -->
+    <section id="section2">
+        <h1>User Experience</h1>
+        <div class="reviews">
+            <div class="review">
+                <img src="C:\Users\shirk\MY CODES\SIH\images\P1.jpg" alt="User A" class="user-photo">
+                <p>"Incredible accuracy in detecting deepfakes!" - User A</p>
+            </div>
+            <div class="review">
+                <img src="C:\Users\shirk\MY CODES\SIH\images\P2.jpeg" alt="User B" class="user-photo">
+                <p>"Highly efficient and user-friendly tool." - User B</p>
+            </div>
+            <div class="review">
+                <img src="C:\Users\shirk\MY CODES\SIH\images\P3.jpg" alt="User C" class="user-photo">
+                <p>"I feel safer sharing videos online now." - User C</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Us Section -->
+    <section id="section3">
+        <h1>About Us</h1>
+        <div class="about-box">
+            <img src="C:\Users\shirk\MY CODES\SIH\images\DALL·E 2025-01-18 20.42.10 - A modern and professional icon representing a digital trust and AI_ML-based solution for deepfake detection. The icon should feature a sleek design wi.webp" alt="About Us Icon" class="about-icon">
+            <p><strong>Our Mission:</strong> To enhance digital trust and security by identifying manipulated video content with precision.</p>
+            <p><strong>Our Vision:</strong> To create a world where authenticity is preserved in digital media.</p>
+            <p>We are a team of dedicated professionals committed to providing cutting-edge AI/ML solutions for deepfake detection. Together, we strive to build a safer digital ecosystem for everyone.</p>
+        </div>
+    </section>
+    
+    
+
+<!-- Contact Us Section -->
+<section id="section5" class="contact-us">
+    <h1>Contact Us</h1>
+    <p>Feel free to reach out to us for any inquiries or assistance.</p>
+    <form class="contact-form" action="#" method="post">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        
+        <label for="requirement">Please Tell Us Your Requirement</label>
+        <textarea id="requirement" name="requirement" placeholder="Describe your requirement" rows="4" required></textarea>
+        
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</section>
+
+
+
+</body>
+</html>
+
+<script>
+    let lastScrollPosition = 0;
+    const header = document.querySelector("header");
+
+    window.addEventListener("scroll", () => {
+        const currentScrollPosition = window.scrollY;
+
+        if (currentScrollPosition > lastScrollPosition) {
+            // Scrolling down
+            header.classList.add("hidden");
+        } else {
+            // Scrolling up
+            header.classList.remove("hidden");
+        }
+
+        lastScrollPosition = currentScrollPosition;
+    });
+</script>
